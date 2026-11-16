@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1794808491985,
+  "timestamp": 1794840878918,
   "index": "/DogizDemo/index.html",
   "assetGroups": [
     {
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/DogizDemo/chunk-BTS-Lk2w.js",
-        "/DogizDemo/chunk-D5mdMqq-.js",
-        "/DogizDemo/chunk-D81KNxli.js",
+        "/DogizDemo/chunk-BMh6z_56.js",
+        "/DogizDemo/chunk-CkWjlIM2.js",
+        "/DogizDemo/chunk-CyiEDGll.js",
         "/DogizDemo/chunk-DJVAsKa_.js",
-        "/DogizDemo/chunk-Nn8SsHQv.js",
+        "/DogizDemo/chunk-D_gPfI1x.js",
         "/DogizDemo/index.html",
-        "/DogizDemo/main-OKMT42J6.js",
+        "/DogizDemo/main-FYC735ZZ.js",
         "/DogizDemo/manifest.webmanifest",
         "/DogizDemo/styles-T65JH3G3.css"
       ],
@@ -146,11 +146,11 @@
     "/DogizDemo/assets/dogs/portraits/shih-tzu.webp": "949fa5318dd862f26d401c3dfef4c62b9145ee41",
     "/DogizDemo/assets/dogs/portraits/toy-poodle-puppy.webp": "2483641767ccb67709d025c8c8c545a584b0d154",
     "/DogizDemo/assets/dogs/portraits/toy-poodle.webp": "f5c7c606d498fee54fba71b6f9f134382278369d",
-    "/DogizDemo/chunk-BTS-Lk2w.js": "0c4e0f90e89bf4ce74156b2e1440d16158b8e045",
-    "/DogizDemo/chunk-D5mdMqq-.js": "06d17d487d4e64cc79af6609cb36d413090cbad1",
-    "/DogizDemo/chunk-D81KNxli.js": "8bc96324232bcc26de49cfcac0793af5129633b8",
+    "/DogizDemo/chunk-BMh6z_56.js": "56021687b4a9fddba4626cd7c5bae8daf60a71c7",
+    "/DogizDemo/chunk-CkWjlIM2.js": "a92989170a51b82b4a2211b3483a4c48481cf154",
+    "/DogizDemo/chunk-CyiEDGll.js": "a5c362c1dd89ac8d276de7f0bd228711f410251a",
     "/DogizDemo/chunk-DJVAsKa_.js": "c23e56b7535f5401eee0a1e3b81de328ce5fd3d2",
-    "/DogizDemo/chunk-Nn8SsHQv.js": "af0f2a75317a2c6f400e71e9f83681cea2425524",
+    "/DogizDemo/chunk-D_gPfI1x.js": "2b5b4d2ab7cdbce69cfef2bd68788406fd04fd64",
     "/DogizDemo/icons/apple-touch-icon.png": "f22a2664efc0140cebf806c3d191f963ba2ccf72",
     "/DogizDemo/icons/icon-128x128.png": "294ce7c024c48afee755120090806dc7b783351b",
     "/DogizDemo/icons/icon-144x144.png": "db9ccd8781343d5c38fdb8fa198d12cc9c39259d",
@@ -161,8 +161,8 @@
     "/DogizDemo/icons/icon-72x72.png": "4b5590afc4a47e3a1f1fe1875c85b299ffd237a0",
     "/DogizDemo/icons/icon-96x96.png": "70f13ff8a35c34853bed33b8b49b22a74b8049de",
     "/DogizDemo/icons/maskable-512x512.png": "7063d7392f653f9965b9ce42f38ed2dc81cf77c1",
-    "/DogizDemo/index.html": "74b3c67ff2923bce21d9dc3b2c6bbfbd2d3e7cdc",
-    "/DogizDemo/main-OKMT42J6.js": "f67ed5016972354ff80c6f6b19f1bca447f36efd",
+    "/DogizDemo/index.html": "20cf9faf1debad1a21b6e63e1b22dbb21afb3388",
+    "/DogizDemo/main-FYC735ZZ.js": "644c21dcbe3f8ee915e0f56c16b77eadefbd999b",
     "/DogizDemo/manifest.webmanifest": "4a7ec01c474d780ddecaf27e04d20e67d4a42184",
     "/DogizDemo/styles-T65JH3G3.css": "d962cb03a74542997c9d97164ca62bea61f02402"
   },
