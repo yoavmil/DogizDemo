@@ -1,0 +1,18 @@
+function d(r,e,t,n){let o=Math.hypot(r,e);return t<=0||o<=t*n?{x:0,y:0}:{x:r/o,y:-e/o}}function c(r,e,t){let n=Math.hypot(r,e);return n<=t||n===0?{x:r,y:e}:{x:r/n*t,y:e/n*t}}var p=(r,e,t)=>`
+.${r}-stick {
+  position: absolute; bottom: calc(max(14px, env(safe-area-inset-bottom)) + 10px);
+  ${t}: calc(max(14px, env(safe-area-inset-${t})) + 10px);
+  width: ${e}px; height: ${e}px; border-radius: 50%; box-sizing: border-box;
+  background: rgba(248, 251, 247, .22); border: 3px solid rgba(248, 251, 247, .7);
+  box-shadow: 0 0 0 2px rgba(35, 50, 59, .35), inset 0 0 18px rgba(35, 50, 59, .25);
+  pointer-events: auto; touch-action: none; z-index: 5;
+}
+.${r}-stick[hidden] { display: none; }
+.${r}-stick-knob {
+  position: absolute; left: 50%; top: 50%; width: ${Math.round(e*.44)}px; height: ${Math.round(e*.44)}px;
+  margin: -${Math.round(e*.22)}px 0 0 -${Math.round(e*.22)}px; border-radius: 50%;
+  background: rgba(248, 251, 247, .92); border: 3px solid #23323b; box-shadow: 0 3px 0 #23323b;
+  pointer-events: none; transition: transform .08s;
+}
+.${r}-stick.${r}-active .${r}-stick-knob { transition: none; }
+`;var a=class{element=document.createElement(`div`);knob=document.createElement(`div`);style=document.createElement(`style`);prefix;deadZone;pointer=null;current={x:0,y:0};constructor(e,{side:t=`right`,prefix:n=`js`,size:o=132,deadZone:i=.25}={}){this.prefix=n,this.deadZone=i,this.style.textContent=p(n,o,t),this.element.className=`${n}-stick`,this.element.setAttribute(`aria-hidden`,`true`),this.knob.className=`${n}-stick-knob`,this.element.append(this.knob),e.append(this.style,this.element),this.element.addEventListener(`pointerdown`,this.onDown,{passive:!1}),this.element.addEventListener(`pointermove`,this.onMove),this.element.addEventListener(`pointerup`,this.onUp),this.element.addEventListener(`pointercancel`,this.onUp),this.element.addEventListener(`lostpointercapture`,this.onUp)}get vector(){return this.current}get active(){return this.pointer!==null}setVisible(e){this.element.hidden=!e,e||this.release()}destroy(){this.element.removeEventListener(`pointerdown`,this.onDown),this.element.removeEventListener(`pointermove`,this.onMove),this.element.removeEventListener(`pointerup`,this.onUp),this.element.removeEventListener(`pointercancel`,this.onUp),this.element.removeEventListener(`lostpointercapture`,this.onUp),this.element.remove(),this.style.remove()}onDown=e=>{if(this.pointer===null){e.preventDefault(),this.pointer=e.pointerId;try{this.element.setPointerCapture(e.pointerId)}catch{}this.element.classList.add(`${this.prefix}-active`),this.track(e)}};onMove=e=>{e.pointerId===this.pointer&&this.track(e)};onUp=e=>{e.pointerId===this.pointer&&this.release()};track(e){let t=this.element.getBoundingClientRect(),n=t.width/2,o=e.clientX-(t.left+n),i=e.clientY-(t.top+t.height/2);this.current=d(o,i,n,this.deadZone);let s=c(o,i,n*.6);this.knob.style.transform=`translate(${s.x.toFixed(1)}px, ${s.y.toFixed(1)}px)`}release(){this.pointer=null,this.current={x:0,y:0},this.knob.style.transform=``,this.element.classList.remove(`${this.prefix}-active`)}};var l={ArrowUp:[0,1],KeyW:[0,1],ArrowDown:[0,-1],KeyS:[0,-1],ArrowLeft:[-1,0],KeyA:[-1,0],ArrowRight:[1,0],KeyD:[1,0]};var h=class r{held=/* @__PURE__ */ new Set;static handles(e){return e in l}keydown(e){return r.handles(e)?(this.held.add(e),!0):!1}keyup(e){return this.held.delete(e)}clear(){this.held.clear()}get any(){return this.vector().x!==0||this.vector().y!==0}vector(){let e=0,t=0;for(let o of this.held){let i=l[o];i&&(e+=i[0],t+=i[1])}if(e=Math.sign(e),t=Math.sign(t),e===0&&t===0)return{x:0,y:0};let n=Math.hypot(e,t);return{x:e/n,y:t/n}}};export{h as n,a as t};
