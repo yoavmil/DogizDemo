@@ -1,4 +1,4 @@
-import{Q as ht,R as Te,ct as ur,m as Et,s as Cn}from"./chunk-yrHZC3ra.js";var b=`
+import{Q as ht,R as Te,ct as ur,m as Et,s as Cn}from"./chunk-CUV2UVVR.js";var b=`
 attribute float aLife;
 attribute vec3 aColor;
 uniform float uScale;
