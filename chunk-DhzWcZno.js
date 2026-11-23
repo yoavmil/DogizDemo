@@ -1,1 +1,0 @@
-var s=[{id:`cat-ginger`,name:`Ginger Street Cat`,url:`assets/cats/ginger-street-cat.glb`,shoulderHeight:.25},{id:`cat-siamese`,name:`Siamese Cat`,url:`assets/cats/siamese-cat.glb`,shoulderHeight:.27},{id:`cat-persian`,name:`Persian Cat`,url:`assets/cats/persian-cat.glb`,shoulderHeight:.24}];function a(e){return s.some(t=>t.id===e)}export{s as n,a as t};
