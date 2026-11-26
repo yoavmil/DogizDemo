@@ -1,4 +1,4 @@
-import{M as Ut,S as Pe,Z as gt,bt as vr,y as Ln}from"./chunk-DThBA2Bi.js";var b=`
+import{C as Pe,N as Ut,Q as gt,xt as vr,y as Ln}from"./chunk-BVXr7ElP.js";var b=`
 attribute float aLife;
 attribute vec3 aColor;
 uniform float uScale;
